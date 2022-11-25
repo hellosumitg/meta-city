@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# metacity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Theory
 
-## Available Scripts
+- What is a Non-Fungible Token?
+  Fungible means to be the same or interchangeable eg Eth is fungible. With this in mind, NFTs are unique; each one is different. Every single token has unique characteristics and values. They are all distinguishable from one another and are not interchangeable eg Unique Art
+  ![NFT's Creation Process](https://i.imgur.com/wt4qWKT.jpg)
 
-In the project directory, you can run:
+- What is ERC-721?
+  ERC-721 is an open standard that describes how to build Non-Fungible tokens on EVM (Ethereum Virtual Machine) compatible blockchains; it is a standard interface for Non-Fungible tokens; it has a set of rules which make it easy to work with NFTs. Before moving ahead have a look at all the functions supported by [ERC721](https://docs.openzeppelin.com/contracts/3.x/api/token/erc721)
 
-### `yarn start`
+## Technology Stack & Tools
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Solidity (Writing Smart Contract)
+- Javascript (React & Testing)
+- [Web3](https://web3js.readthedocs.io/en/v1.5.2/) (Blockchain Interaction)
+- [Truffle](https://www.trufflesuite.com/docs/truffle/overview) (Development Framework)
+- [Ganache](https://www.trufflesuite.com/ganache) (For Local Blockchain)
+- [MetaMask](https://metamask.io/) (Ethereum Wallet)
+- [ThreeJS](https://threejs.org/docs/index.html) (3D Javascript library)
+- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) (React renderer for Three.js)
+- [@react-three/drei](https://docs.pmnd.rs/drei/introduction) (Extra helpers for React-Three-Fiber)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements For Initial Setup
 
-### `yarn test`
+- Install [NodeJS](https://nodejs.org/en/), I recommend using node version v14 or v16 to avoid any potential dependency issues
+- Install [Truffle](https://www.trufflesuite.com/docs/truffle/overview), In your terminal, you can check to see if you have truffle by running `truffle --version`. To install truffle run `npm i -g truffle`.
+- Install [Ganache](https://www.trufflesuite.com/ganache).
+- Install [MetaMask](https://metamask.io/) in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setting Up
 
-### `yarn build`
+### 1. Clone/Download the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`$ yarn`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Migrate Smart Contracts
 
-### `yarn eject`
+`$ truffle migrate --reset`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Test Smart Contracts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`$ truffle test`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 5. Start Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`$ yarn start`
 
-## Learn More
+## Requirements For Running App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 1. Setup a local blockchain network for running Ganache-Cli with these credential or as per your choice:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Network name: "Local Network CLI"
+- New RPC URL: "http://127.0.0.1:8545/"
+- Chain ID: "31337"
+- Currency symbol: "ETH"
+- Block explorer URL(OPtional): fill it
+  or leave it empty as per your choice
 
-### Code Splitting
+#### 2. Run the Local blockchain in one terminal and keep it running by writing also copy and import first two accounts' private into your metamask wallet using :-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`$ npx ganache-cli`
 
-### Analyzing the Bundle Size
+#### 3. Now start the App using new terminal and purchase the plot of land using:-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`$ yarn start`
