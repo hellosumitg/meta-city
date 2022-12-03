@@ -1,4 +1,4 @@
-# metacity
+# MetaCity
 
 ## Theory
 
