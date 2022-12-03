@@ -15,7 +15,8 @@
 - Javascript (React & Testing)
 - [Web3](https://web3js.readthedocs.io/en/v1.5.2/) (Blockchain Interaction)
 - [Truffle](https://www.trufflesuite.com/docs/truffle/overview) (Development Framework)
-- [Ganache](https://www.trufflesuite.com/ganache) (For Local Blockchain)
+- [Ganache](https://www.trufflesuite.com/ganache) (For Local Blockchain) for testing purpose
+- Goerli Testnet for deployment
 - [MetaMask](https://metamask.io/) (Ethereum Wallet)
 - [ThreeJS](https://threejs.org/docs/index.html) (3D Javascript library)
 - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) (React renderer for Three.js)
@@ -39,6 +40,8 @@
 ### 3. Migrate Smart Contracts
 
 `$ truffle migrate --reset`
+or
+`$ truffle migrate --reset --network goerli`
 
 ### 4. Test Smart Contracts
 

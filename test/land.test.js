@@ -9,7 +9,7 @@ const EVM_REVERT = "VM Exception while processing transaction: revert";
 contract("Land", ([owner1, owner2]) => {
   const NAME = "Buildings";
   const SYMBOL = "BLD";
-  const COST = web3.utils.toWei("0.01", "ether"); // in terms of wei (i.e 10 ** 18 form)
+  const COST = web3.utils.toWei("1", "ether"); // in terms of wei (i.e 10 ** 18 form)
 
   let land, result; // here `result` is the variable using which we are going to check the expected output from each test
 
