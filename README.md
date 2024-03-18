@@ -7,7 +7,7 @@
   ![NFT's Creation Process](https://i.imgur.com/wt4qWKT.jpg)
 
 - What is ERC-721?
-  ERC-721 is an open standard that describes how to build Non-Fungible tokens on EVM (Ethereum Virtual Machine) compatible blockchains; it is a standard interface for Non-Fungible tokens; it has a set of rules which make it easy to work with NFTs. Before moving ahead have a look at all the functions supported by [ERC721](https://docs.openzeppelin.com/contracts/3.x/api/token/erc721)
+  ERC-721 is an open standard that describes how to build Non-Fungible tokens on EVM (Ethereum Virtual Machine) compatible blockchains; it is a standard interface for Non-Fungible tokens; it has a set of rules that make it easy to work with NFTs. Before moving ahead have a look at all the functions supported by [ERC721](https://docs.openzeppelin.com/contracts/3.x/api/token/erc721)
 
 ## Technology Stack & Tools
 
